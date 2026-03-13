@@ -1,33 +1,22 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 
 const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#projects", label: "Projects" },
-  { href: "#experience", label: "Experience" },
-  { href: "#contact", label: "Contact" },
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/#projects", label: "Projects" },
 ];
 
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 20);
-
-      const sections = ["home", "projects", "experience", "contact"];
-      for (const section of sections) {
-        const el = document.getElementById(section);
-        if (el) {
-          const rect = el.getBoundingClientRect();
-          if (rect.top <= 120 && rect.bottom >= 120) {
-            setActiveSection(section);
-          }
-        }
-      }
     };
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -40,8 +29,8 @@ export default function Navigation() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.25, 0.46, 0.45, 0.94] }}
     >
-      <a href="#home" className="nav-logo">
-        &lt;YourName /&gt;
+      <a href="/" className="nav-logo">
+        &lt; Bao Nguyen /&gt;
       </a>
 
       <ul className="nav-links">
@@ -49,9 +38,12 @@ export default function Navigation() {
           <li key={link.href}>
             <a
               href={link.href}
-              style={{
-                color: activeSection === link.href.replace("#", "") ? "var(--text-primary)" : undefined,
-              }}
+              className={
+                pathname === link.href ||
+                (link.href === "/" && pathname === "/")
+                  ? "nav-link-active"
+                  : ""
+              }
             >
               {link.label}
             </a>
