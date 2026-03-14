@@ -5,23 +5,23 @@ import { motion, type Variants, type Transition } from "framer-motion";
 const EASE: [number, number, number, number] = [0.25, 0.46, 0.45, 0.94];
 
 const techIcons = [
-  { emoji: "⚛️", label: "React",      style: { top: "10%",  left: "20%",  "--float-duration": "3.5s", "--float-delay": "0s" } },
-  { emoji: "▲",  label: "Next.js",    style: { top: "5%",   left: "55%",  "--float-duration": "4.2s", "--float-delay": "0.3s" } },
-  { emoji: "🟦", label: "TypeScript", style: { top: "30%",  left: "5%",   "--float-duration": "3.8s", "--float-delay": "0.6s" } },
-  { emoji: "🌿", label: "Node.js",    style: { top: "28%",  left: "70%",  "--float-duration": "4.5s", "--float-delay": "0.1s" } },
-  { emoji: "🐍", label: "Python",     style: { top: "55%",  left: "15%",  "--float-duration": "4.0s", "--float-delay": "0.8s" } },
-  { emoji: "🔷", label: "Docker",     style: { top: "60%",  left: "60%",  "--float-duration": "3.6s", "--float-delay": "0.4s" } },
-  { emoji: "🗄️", label: "Postgres",   style: { top: "78%",  left: "30%",  "--float-duration": "4.8s", "--float-delay": "0.2s" } },
-  { emoji: "🔥", label: "Firebase",   style: { top: "80%",  left: "72%",  "--float-duration": "3.9s", "--float-delay": "0.7s" } },
-  { emoji: "☁️", label: "AWS",        style: { top: "45%",  left: "42%",  "--float-duration": "4.3s", "--float-delay": "0.5s" } },
-  { emoji: "🎨", label: "Tailwind",   style: { top: "15%",  left: "82%",  "--float-duration": "3.7s", "--float-delay": "0.9s" } },
+  { emoji: "⚛️", label: "React", style: { top: "10%", left: "20%", "--float-duration": "3.5s", "--float-delay": "0s" } },
+  { emoji: "▲", label: "Next.js", style: { top: "5%", left: "55%", "--float-duration": "4.2s", "--float-delay": "0.3s" } },
+  { emoji: "🟦", label: "TypeScript", style: { top: "30%", left: "5%", "--float-duration": "3.8s", "--float-delay": "0.6s" } },
+  { emoji: "🌿", label: "Node.js", style: { top: "28%", left: "70%", "--float-duration": "4.5s", "--float-delay": "0.1s" } },
+  { emoji: "🐍", label: "Python", style: { top: "55%", left: "15%", "--float-duration": "4.0s", "--float-delay": "0.8s" } },
+  { emoji: "🔷", label: "Docker", style: { top: "60%", left: "60%", "--float-duration": "3.6s", "--float-delay": "0.4s" } },
+  { emoji: "🗄️", label: "Postgres", style: { top: "78%", left: "30%", "--float-duration": "4.8s", "--float-delay": "0.2s" } },
+  { emoji: "🔥", label: "Firebase", style: { top: "80%", left: "72%", "--float-duration": "3.9s", "--float-delay": "0.7s" } },
+  { emoji: "☁️", label: "AWS", style: { top: "45%", left: "42%", "--float-duration": "4.3s", "--float-delay": "0.5s" } },
+  { emoji: "🎨", label: "Tailwind", style: { top: "15%", left: "82%", "--float-duration": "3.7s", "--float-delay": "0.9s" } },
 ];
 
 const socials = [
-  { label: "GitHub",    href: "https://github.com" },
-  { label: "LinkedIn",  href: "https://linkedin.com" },
-  { label: "Twitter",   href: "https://twitter.com" },
-  { label: "Email",     href: "mailto:your@email.com" },
+  { label: "GitHub", href: "https://github.com" },
+  { label: "LinkedIn", href: "https://linkedin.com" },
+  { label: "Twitter", href: "https://twitter.com" },
+  { label: "Email", href: "mailto:your@email.com" },
 ];
 
 const containerVariants: Variants = {
