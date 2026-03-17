@@ -15,6 +15,14 @@ interface Project {
 
 const projects: Project[] = [
   {
+    title: "Lá Nghệ Thuật — Handmade Leaf Art",
+    description: "Personalized e-commerce platform for leaf art, featuring AI-powered photo previews and natural leaf processing.",
+    tech: ["Next.js", "Tailwind", "AI Preview", "E-commerce"],
+    emoji: "🍃",
+    color: "#22c55e",
+    link: "https://la-nghe-thuat.vercel.app/",
+  },
+  {
     title: "UK's Largest Influencer Marketing Platform",
     description: "Full-stack SaaS connecting brands with verified influencers at scale.",
     tech: ["React", "Next.js", "MongoDB", "API"],

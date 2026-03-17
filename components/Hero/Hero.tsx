@@ -2,6 +2,7 @@
 
 import { motion, type Variants, type Transition } from "framer-motion";
 import "./Hero.css";
+import IconSphere from "../IconSphere/IconSphere";
 
 const EASE: [number, number, number, number] = [0.25, 0.46, 0.45, 0.94];
 
@@ -87,7 +88,8 @@ export default function Hero() {
 
       {/* Floating Tech Icons */}
       <div className="floating-icons">
-        {techIcons.map((icon) => (
+        <IconSphere />
+        {/* {techIcons.map((icon) => (
           <div
             key={icon.label}
             className="floating-icon"
@@ -96,7 +98,7 @@ export default function Hero() {
           >
             {icon.emoji}
           </div>
-        ))}
+        ))} */}
       </div>
     </section>
   );

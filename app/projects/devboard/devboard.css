@@ -1,0 +1,109 @@
+.project {
+    background: linear-gradient(160deg, #0f0f1a 0%, #0a0a14 100%);
+    min-height: 100vh;
+}
+
+.project-hero {
+    max-width: 900px;
+    margin-bottom: 4rem;
+}
+
+.project-tag {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 100px;
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    background: rgba(139, 92, 246, 0.08);
+    color: var(--accent-purple);
+}
+
+.project-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    margin-top: 1rem;
+    line-height: 1.1;
+}
+
+.gradient {
+    background: linear-gradient(135deg, var(--accent-purple), var(--accent-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-desc {
+    margin-top: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    max-width: 620px;
+}
+
+.project-actions {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.project-block {
+    margin-top: 5rem;
+    max-width: 900px;
+}
+
+.project-block h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.project-card {
+    padding: 1.8rem;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: var(--bg-card);
+}
+
+.stack-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.stack-item {
+    padding: 0.4rem 0.9rem;
+    border-radius: 100px;
+    background: rgba(139, 92, 246, 0.12);
+    border: 1px solid rgba(139, 92, 246, 0.3);
+    font-size: 0.85rem;
+}
+
+.arch-box {
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.feature-list {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}

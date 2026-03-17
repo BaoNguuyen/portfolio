@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import "./FeaturedProject.css";
-import { useRef } from "react";
 
 const mockupStyle: React.CSSProperties = {
   width: "100%",
@@ -55,7 +54,7 @@ export default function FeaturedProject() {
               care about velocity and quality.
             </p>
             <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-              <a href="#" className="btn-primary">
+              <a href="/projects/devboard" className="btn-primary">
                 Try DevBoard ↗
               </a>
               <a href="#" className="btn-secondary">

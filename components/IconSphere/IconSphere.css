@@ -1,0 +1,89 @@
+.sphere-wrapper {
+
+    position: absolute;
+
+    right: 5%;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 450px;
+    height: 450px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sphere {
+
+    position: relative;
+
+    width: 350px;
+    height: 350px;
+
+    transform-style: preserve-3d;
+
+}
+
+.sphere-item {
+
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+
+    width: 60px;
+    height: 60px;
+
+    margin: -22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.9rem;
+
+    border-radius: 10px;
+
+    background: var(--bg-card);
+
+    border: 1px solid var(--border);
+
+    user-select: none;
+
+    cursor: grab;
+
+    transition:
+        transform 0.1s linear,
+        box-shadow 0.3s ease,
+        filter 0.2s ease;
+
+}
+
+.sphere-item:active {
+    cursor: grabbing;
+}
+
+.tooltip {
+
+    position: absolute;
+
+    bottom: -22px;
+
+    font-size: 19px;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: opacity 0.2s ease;
+
+    color: var(--text-secondary);
+
+}
+
+.sphere-item:hover .tooltip {
+    opacity: 1;
+}
