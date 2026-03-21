@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>{children}</body>
 
-      <GoogleAnalytics gaId="G-11WCFR4HQL" />
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS || ""} />
     </html>
   );
 }
